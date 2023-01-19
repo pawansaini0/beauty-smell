@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Flex, Spacer, Button, ButtonGroup, Container ,Input} from "@chakra-ui/react";
-
+import { Box, Flex, Spacer, Button, ButtonGroup, Container ,Input,Image} from "@chakra-ui/react";
+import logo from "../images/BTd.png"
 const Navbar = () => {
   return (
     // <div className="navbar">
@@ -19,8 +19,8 @@ const Navbar = () => {
     <Box>
       <Flex minWidth="max-content" alignItems="center" gap="2">
         <Box p="2">
-          <img
-            src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltce6d6c480577e10e/5d4866eff9ece57fa9a82245/flowers.png?quality=60&auto=webp&optimize={medium}"
+          <Image
+            src={logo} w="50%"
             alt=""
           />
         </Box>
