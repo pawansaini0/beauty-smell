@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box bg="#7b2cbf" pb="5rem">
+    <Box bg="#65388b" pb="5rem">
       <Grid
         justify="space-evenly"
         fontSize="sm"
@@ -11,7 +11,7 @@ const Footer = () => {
         w="90%"
         margin="auto"
         textAlign="start"
-        templateColumns="repeat(5, 1fr)"
+        templateColumns={{base:"repeat(2, 1fr)",md:"repeat(3, 1fr)",lg:"repeat(5, 1fr)"}}
         gap={20}
         pb="3rem"
         pt="3rem"

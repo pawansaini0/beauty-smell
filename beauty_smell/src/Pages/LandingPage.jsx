@@ -26,7 +26,7 @@ const LandingPage = () => {
       <Heading mt="4rem" mb="1rem">
         Send Flowers & Exclusive Gifts
       </Heading>
-      <HStack>
+      <Grid templateColumns={{base:"repeat(2,1fr)",md:"repeat(3,1fr)",lg:"repeat(6,1fr)"}}>
         <Box>
           <Image
             src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt5eb232318d3a6d1e/637e8388deb37610ecbb8e31/flower-delivery-same-day-silo-167891-260x284.jpeg?quality=75&auto=webp&optimize={medium}"
@@ -69,7 +69,7 @@ const LandingPage = () => {
           />
           <Text>Get Well</Text>
         </Box>
-      </HStack>
+      </Grid>
       <Container mt="4rem" mb="2rem" maxW="6xl" maxH="md">
         <img
           src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltfc69d1be54851e61/63a5bbef81b6d37de803b31d/gift-more-marketplace-winter-edit-hero.jpg?quality=75&auto=webp&optimize={medium}"
@@ -78,7 +78,7 @@ const LandingPage = () => {
       </Container>
       <Box>
         <Heading>Explore Our Self-Care Essentials</Heading>
-        <HStack margin="auto" mb="3rem">
+        <Grid templateColumns={{base:"repeat(2,1fr)",md:"repeat(3,1fr)",lg:"repeat(6,1fr)"}} margin="auto" mb="3rem">
           <Box>
             <Image
               src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt83c25a21462cccea/63a61e2e9233961262fbbcfe/spa-gift-basket-silo-mk012144-260x284.jpg?quality=75&auto=webp&optimize={medium}"
@@ -121,7 +121,7 @@ const LandingPage = () => {
             />
             <Text>Cozy Comfort</Text>
           </Box>
-        </HStack>
+        </Grid>
       </Box>
       <Container maxW="6xl">
         <Grid templateColumns="repeat(2, 1fr)" gap={9}>
@@ -149,7 +149,7 @@ const LandingPage = () => {
       </Container>
       <Spacer />
       <Heading mt="2rem">Offer Comfort With Sympathy Flowers & Gifts</Heading>
-      <HStack>
+      <Grid templateColumns={{base:"repeat(2,1fr)",md:"repeat(3,1fr)",lg:"repeat(6,1fr)"}}>
         <Box>
           <Image src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt2a407a6a54d38487/63c1ce615156964aea4347db/funeral-arrangements-silo-148752-260x284.jpg?quality=75&auto=webp&optimize={medium}" />
           <Text>Funeral Arrangements</Text>
@@ -174,47 +174,47 @@ const LandingPage = () => {
           <Image src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt1e51da89f5d53b69/63c1cf15e6cd4a7779d9f21b/sympathy-remembrance-gifts-silo-97343l-260x284.jpg?quality=75&auto=webp&optimize={medium}" />
           <Text>Remembrance Gifts</Text>
         </Box>
-      </HStack>
+      </Grid>
       <Heading mt="4rem" mb="2rem">
         Trending Flowers & Gifts
       </Heading>
-      <HStack width="90%" margin="auto">
+      <Grid gap="1rem" width="90%" templateColumns={{base:"repeat(3,1fr)",md:"repeat(4,1fr)",lg:"repeat(7,1fr)"}}  margin="auto">
         <Box>
           <Image src="https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191167xltoppicksnipez.jpg?quality=75&auto=webp&optimize={medium}" />
-          <Text>Floral Embrace™</Text>
+          <Text noOfLines={1}>Floral Embrace™</Text>
           <Text fontWeight="bold">Starting From $39.99</Text>
         </Box>
         <Box>
           <Image src="https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/191168xlz.jpg?quality=75&auto=webp&optimize={medium}" />
-          <Text>Daydream Bouquet™</Text>
+          <Text noOfLines={1}>Daydream Bouquet™</Text>
           <Text fontWeight="bold">Starting From $49.99</Text>
         </Box>
         <Box>
           <Image src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/90925mpuv5ch29z.jpg?quality=75&auto=webp&optimize={medium}" />
-          <Text>Two Dozen Assorted</Text>
+          <Text noOfLines={1}>Two Dozen Assorted</Text>
           <Text fontWeight="bold">Starting From $59.99</Text>
         </Box>
         <Box>
           <Image src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191252xlz.jpg?quality=75&auto=webp&optimize={medium}" />
-          <Text>Garden of Grandeur®</Text>
+          <Text noOfLines={1}>Garden of Grandeur®</Text>
           <Text fontWeight="bold">Starting From $74.99</Text>
         </Box>
         <Box>
           <Image src="https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/90926mrdv4ch31z.jpg?quality=75&auto=webp&optimize={medium}" />
-          <Text>Two Dozen Red Ro ...</Text>
+          <Text noOfLines={1}>Two Dozen Red </Text>
           <Text fontWeight="bold">Starting From $59.99</Text>
         </Box>
         <Box>
           <Image src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/158086lgwcz.jpg?quality=75&auto=webp&optimize={medium}" />
-          <Text>Graceful Gardenia</Text>
+          <Text noOfLines={1}> Graceful Gardenia</Text>
           <Text fontWeight="bold">Starting From $39.99</Text>
         </Box>
         <Box>
           <Image src="https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191173xlz.jpg?quality=75&auto=webp&optimize={medium}" />
-          <Text>Lovely Lavender Me ...</Text>
+          <Text noOfLines={1}>Lovely Lavender</Text>
           <Text fontWeight="bold">Starting From $49.99</Text>
         </Box>
-      </HStack>
+      </Grid>
       <Box>
         <Image src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltacd983b63a7ffb07/63c5ccc2eeda2410c17f4286/Post_Enrollment_Desktop_V2_Image_(2).png?quality=75&auto=webp&optimize={medium}" />
       </Box>
