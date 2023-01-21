@@ -1,5 +1,7 @@
 import React from "react";
 import {Grid} from "@chakra-ui/react"
+import {Link} from "react-router-dom"
+import Products from "../Pages/Products";
 const DropDown = () => {
   return (
     <Grid templateColumns={{base:"repeat(3,1fr)",md:"repeat(5,1fr)",lg:"repeat(10,1fr)"}}>
@@ -8,8 +10,8 @@ const DropDown = () => {
         <div className="dropdown-content">
           <div>
             <b>Valentine's</b>
-            <a href="#">All Valentine's Flowers & gifts</a>
-            <a href="#">Valentine's Best Sellers</a>
+            {/* <Link to="/products">All Valentine's Flowers & gifts</Link> */}
+            <Link to="/products">Valentine's Best Sellers</Link>
             <a href="#">Flower Subscriptions</a>
             <br />
             <b>Shop by Flowers & Plants</b>
