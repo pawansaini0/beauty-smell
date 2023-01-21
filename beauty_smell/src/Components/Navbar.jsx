@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import logo from "../images/BTd.png";
 import DropDown from "./DropDown";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Box>
@@ -35,7 +36,15 @@ const Navbar = () => {
           </Select>
         </Flex>
       </Box>
-      <Grid templateColumns={{base:"repeat(3,1fr)",md:"repeat(6,1fr)",lg:"repeat(11,1fr)"}} gap="5px"  justify="space-between">
+      <Grid
+        templateColumns={{
+          base: "repeat(3,1fr)",
+          md: "repeat(6,1fr)",
+          lg: "repeat(11,1fr)",
+        }}
+        gap="5px"
+        justify="space-between"
+      >
         <Image src="https://images.contentstack.io/v3/assets/blt95e0138311135214/blt13b0f02cd71877df/5f08974a8b0e59084c9f7570/hd-logo-v3.svg?height=32&width=78" />
         <Image src="https://images.contentstack.io/v3/assets/blt95e0138311135214/bltac334446d6f9e89c/5f96fc4f2425cd7a8af6845e/pmall_svg-logo-v2.svg?height=32&width=78" />
         <Image src="https://images.contentstack.io/v3/assets/blt95e0138311135214/bltf0b1021465476e4f/5f08974b0d1d2008538ce15a/SharisLogo_r.svg?height=32&width=78" />
@@ -51,14 +60,15 @@ const Navbar = () => {
       <Divider />
       <Box w="98%" margin="auto" className="navbar">
         <Flex alignItems="center" justify="space-between">
-          <Image src={logo} alt="" w="15%" />
+          <Link to="/" border="1px solid blue" >
+            <Image src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltce6d6c480577e10e/5d4866eff9ece57fa9a82245/flowers.png?quality=60&auto=webp&optimize={medium}" alt="" w="80%"/>
+          </Link>
           <Flex>
             <Input
-              w={[100,300, 400, 500]}
+              w={[100, 300, 400, 500]}
               type="text"
               placeholder="Enter Keyword or Product Number"
               borderRadius="2px"
-
             />
             <Button
               borderRadius="2px"
@@ -73,7 +83,7 @@ const Navbar = () => {
             justify="space-between"
             fontSize="0.8rem"
             alignItems="center"
-            gap={[1,2,3]}
+            gap={[1, 2, 8]}
           >
             <Box>
               <Image
@@ -104,13 +114,8 @@ const Navbar = () => {
       </Box>
       <Divider borderRadius="10" borderColor="black" borderWidth="1px" />
       <DropDown />
-      <Divider
-        borderRadius="10"
-        borderColor="black"
-        borderWidth="1px "
-        
-      />
-      <Box bg="#FAF5FF" h="4rem" >
+      <Divider borderRadius="10" borderColor="black" borderWidth="1px " />
+      <Box bg="#FAF5FF" h="4rem">
         <Text color="#553C9A" fontWeight="bold" pt="1.1rem">
           SAVE UP TO 40% ON TOP FLOWERS & GIFTS! | SHOP NOW >
         </Text>
