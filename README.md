@@ -1,10 +1,12 @@
 <h1>Beauty Smell</h1>
 <p>Beauty Smell is a premium online bouquets and home essentials retailer that offers an extensive selection of bouquets. A user can puchase bouquets worldwide from our webside</p>
+<li></li><img width="960" alt="2023-05-29" src="https://github.com/pawansaini0/aware-carriage-7836/assets/112754696/730c435f-700d-4b48-9c83-9a1e1d9dee74">
 <h1>Technologies Used</h1>
 <p>Our website is built using a modern technology stack, ensuring a fast and reliable experience for our customers. The front-end of our website is built using:</p>
 <ul>
   <li>React.js</li>
-  <li>Chakra UI</li>
+  
+
   <li>javascript</li>
 </ul>
 <h2>The back-end utilizes:</h2>
