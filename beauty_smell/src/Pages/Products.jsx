@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 const Products = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:8080/products").then((res) => {
+    axios.get("https://beautyapi.onrender.com/products").then((res) => {
       console.log(res.data);
       setData(res.data);
     });
